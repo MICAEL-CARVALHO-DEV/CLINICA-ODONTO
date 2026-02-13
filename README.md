@@ -1,2 +1,1 @@
 # CLINICA-ODONTO
-clinica
