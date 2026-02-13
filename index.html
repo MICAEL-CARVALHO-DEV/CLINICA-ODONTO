@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OdontoMaster em São Paulo: clínica odontológica com equipe especializada, tecnologia moderna e atendimento humanizado.">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>OdontoMaster | Clínica Odontológica em São Paulo</title>
+    <link rel="icon" type="image/png" href="./IMGS/logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body class="header-pos-bottom">
+
+    <section id="home" class="hero-video-container">
+        <video class="hero-video is-active" autoplay muted playsinline preload="auto" data-hero-loop>
+            <source src="./videos/Home.mp4" type="video/mp4">
+        </video>
+        <video class="hero-video" muted playsinline preload="auto" data-hero-loop aria-hidden="true">
+            <source src="./videos/Home.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        <header class="hero-header">
+            <div class="header-brand-dock">
+                <a href="#home" class="header-logo">
+                    <img src="./IMGS/logo.png" alt="OdontoMaster Logo">
+                    <h1>OdontoMaster</h1>
+                </a>
+
+            </div>
+
+            <div class="header-nav-dock">
+                <nav id="main-nav" aria-label="Menu principal">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+
+        
+
+    </section>
+
+    <section id="sobre" class="sobre-section">
+        <div class="sobre-container">
+
+            <div class="sobre-texto">
+                <h2 class="section-title">Bem-vindo à OdontoMaster</h2>
+                <p>
+                    Nossa clínica combina tecnologia de ponta com um cuidado humano e personalizado.
+                    Não tratamos apenas sorrisos, criamos experiências de bem-estar.
+                </p>
+                <p>
+                    Com uma equipe de especialistas renomados e um ambiente pensado para seu conforto,
+                    estamos prontos para redefinir suas expectativas sobre tratamento odontológico.
+                </p>
+                <a href="#agendamento" data-open-modal class="card-btn">Agendar Avaliação</a>
+            </div>
+
+            <div class="sobre-imagem">
+                <img src="./IMGS/radiologia.avif" loading="lazy" decoding="async" alt="Sala clínica odontológica moderna">
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="procedimentos">
+        <div class="procedimentos-sticky">
+            <div class="procedimentos-bg"></div>
+
+            <div class="procedimentos-tags">
+
+                <div class="tag" data-video="./videos/CIRURGIA-VIDEO.mp4" data-loop-start="0" data-loop-end="5">
+                    <div class="tag-title">CIRURGIA</div>
+                </div>
+
+                <div class="tag" data-video="./videos/RESTAURACAO-VIDEO.mp4" data-loop-start="0" data-loop-end="22">
+                    <div class="tag-title">RESTAURAÇÃO</div>
+                </div>
+
+                <div class="tag" data-video="./videos/MANUTENCAO-VIDEO.mp4" data-loop-start="0" data-loop-end="22">
+                    <div class="tag-title">MANUTENÇÃO</div>
+                </div>
+
+                <div class="tag tag-destaque" data-video="./videos/ESTETICA-VIDEO.mp4" data-loop-start="0" data-loop-end="24">
+                    <div class="tag-title">ESTÉTICA</div>
+                </div>
+            </div>
+
+            <video id="procedimento-video" class="procedimento-video" muted preload="auto"></video>
+        </div>
+    </div>
+
+    <section id="servicos" class="servicos-grid">
+        <h2 class="section-title">Nossos Serviços</h2>
+
+        <div class="grid-container">
+
+            <div class="servico-card">
+                <img src="./IMGS/ortondotia.jpg" loading="lazy" decoding="async" alt="Foto do Serviço Ortodontia">
+                <div class="card-content">
+                    <h3>Ortodontia</h3>
+                    <p>Mantenha seu sorriso saudável com nossa limpeza dental profissional, removendo placa e tártaro.
+                    </p>
+                    <a href="#agendamento" data-open-modal class="card-btn">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="servico-card">
+                <img src="./IMGS/estetica.jpg" loading="lazy" decoding="async" alt="Foto do Serviço Estética">
+                <div class="card-content">
+                    <h3>Estética</h3>
+                    <p>Obtenha um sorriso mais branco e brilhante com nossos tratamentos de clareamento de última
+                        geração.</p>
+                    <a href="#agendamento" data-open-modal class="card-btn">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="servico-card">
+                <img src="./IMGS/radiologia.avif" loading="lazy" decoding="async" alt="Foto do Serviço Radiologia">
+                <div class="card-content">
+                    <h3>Radiologia</h3>
+                    <p>Exames de imagem precisos para diagnóstico e planejamento de tratamentos dentários.</p>
+                    <a href="#agendamento" data-open-modal class="card-btn">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="servico-card">
+                <img src="./IMGS/Implante.jpg" loading="lazy" decoding="async" alt="Foto do Serviço Implante Dentário">
+                <div class="card-content">
+                    <h3>Implante Dentário</h3>
+                    <p>Substitua dentes perdidos com implantes de alta qualidade, restaurando a função e a estética.</p>
+                    <a href="#agendamento" data-open-modal class="card-btn">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="servico-card">
+                <img src="./IMGS/Traumatologia.jpg" loading="lazy" decoding="async" alt="Foto do Serviço Traumatologia">
+                <div class="card-content">
+                    <h3>Traumatologia</h3>
+                    <p>Tratamento de lesões e traumas na região bucal, garantindo a recuperação e a saúde do
+                        paciente.</p>
+                    <a href="#agendamento" data-open-modal class="card-btn">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="servico-card">
+                <img src="./IMGS/Odontopediatria.jpg" loading="lazy" decoding="async" alt="Foto do Serviço Odontopediatria">
+                <div class="card-content">
+                    <h3>Odontopediatria</h3>
+                    <p>Cuidados dentários especializados para crianças, garantindo um sorriso saudável desde
+                        cedo.</p>
+                    <a href="#agendamento" data-open-modal class="card-btn">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="servico-card">
+                <img src="./IMGS/Periodontia.jpg" loading="lazy" decoding="async" alt="Foto do Serviço Periodontia">
+                <div class="card-content">
+                    <h3>Periodontia</h3>
+                    <p>Cuidados dentários especializados para a saúde das gengivas e estruturas de suporte dos
+                        dentes.</p>
+                    <a href="#agendamento" data-open-modal class="card-btn">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="servico-card">
+                <img src="./IMGS/protese.jpg" loading="lazy" decoding="async" alt="Foto do Serviço Prótese Dentária">
+                <div class="card-content">
+                    <h3>Prótese Dentária</h3>
+                    <p>Restaurando sorrisos com próteses dentárias de alta qualidade e conforto.</p>
+                    <a href="#agendamento" data-open-modal class="card-btn">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="servico-card">
+                <img src="./IMGS/Facetas.jpg" loading="lazy" decoding="async" alt="Foto do Serviço Facetas Dentárias">
+                <div class="card-content">
+                    <h3>Facetas Dentárias</h3>
+                    <p>Restaurando sorrisos com facetas dentárias de alta qualidade e conforto.</p>
+                    <a href="#agendamento" data-open-modal class="card-btn">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="servico-card">
+                <img src="./IMGS/rest.jpg" loading="lazy" decoding="async" alt="Foto do Serviço Restauração">
+                <div class="card-content">
+                    <h3>Restauração</h3>
+                    <p>Restaurando sorrisos com restaurações dentárias de alta qualidade e conforto.</p>
+                    <a href="#agendamento" data-open-modal class="card-btn">Saiba Mais</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="agendamento" class="cta-section">
+        <div class="cta-content">
+            <h2 class="section-title">Pronto para transformar seu sorriso?</h2>
+            <p>Não espere mais. Agende sua consulta hoje mesmo e dê o primeiro passo.</p>
+            <a href="#agendamento" id="open-modal-btn" data-open-modal class="cta-button">
+                Agendar Agora
+            </a>
+        </div>
+    </section>
+
+    <div id="agendamento-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-subtitle" tabindex="-1">
+            <button id="close-modal-btn" class="modal-close" aria-label="Fechar modal">&times;</button>
+            <h3 id="modal-title" class="modal-title">Escolha sua preferência</h3>
+            <p id="modal-subtitle" class="modal-subtitle">Entre em contato conosco da forma que for mais fácil para você.</p>
+
+            <div class="modal-actions">
+                <a href="https://wa.me/5511984354125" target="_blank" rel="noopener noreferrer" class="modal-btn whatsapp">
+
+                    <img src="./IMGS/whatsapp-modalaction.png" alt="Ícone do WhatsApp">
+                    Agendar via WhatsApp
+                </a>
+                <a href="mailto:contato@suaclinica.com" class="modal-btn email">
+                    <img src="./IMGS/gmail-modalaction.png" alt="Ícone de E-mail">
+                    Agendar via E-mail
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer id="contato" class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <a href="#home" class="footer-logo">
+                    <img src="./IMGS/logo.png" alt="OdontoMaster Logo">
+                    <p class="brand-name">OdontoMaster</p>
+                </a>
+                <h3 class="footer-title">Sobre Nós</h3>
+                <p>
+                    Tecnologia e cuidado humano para transformar sorrisos.
+                    Sua referência em odontologia moderna.
+                </p>
+                <div class="social-icons">
+
+                    <a href="https://wa.me/5511984354125" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                        <img src="./IMGS/whatsapp-footer.png" alt="WhatsApp">
+                    </a>
+
+                    <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                        <img src="./IMGS/instagram-footer.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                        <img src="./IMGS/facebook-footer.png" alt="Facebook">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Localização</h3>
+                <p>
+                    Rua da Inovação, 123, Sala 456<br>
+                    Bairro Tech, São Paulo - SP<br>
+                    CEP: 01234-567
+                </p>
+                <div class="footer-map">
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.145848529094!2d-46.65657108447515!3d-23.56309936754026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0x4a3224036f0e4b3!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1678886001123!5m2!1spt-BR!2sbr"
+                        width="600"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="footer-title">Contato</h3>
+                <p>
+                    <strong>Telefone:</strong> (11) 98765-4321<br>
+                    <strong>E-mail:</strong> contato@odontoMaster.com<br>
+                    <strong>Horários:</strong> Seg - Sex: 8h às 18h
+                </p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 OdontoMaster. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
+
+
+
